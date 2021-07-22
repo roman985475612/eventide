@@ -1,0 +1,21 @@
+.goals {
+	@include section();
+
+	&__text {
+
+		&--large {
+			margin-bottom: 1.5rem;
+			font-size: 1.8rem;
+			color: $gray-600;
+		}
+	}
+
+	&__list {
+		padding-left: 30px;
+		list-style: url('../icons/check-circle-solid.svg') !important;
+	}
+
+	&__list-item {
+		padding: 5px 0;
+	}
+}

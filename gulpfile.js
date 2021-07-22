@@ -33,6 +33,8 @@ task('clean', () => {
         `${DIST_PATH}/**/*`, 
         `!${DIST_PATH}/img/**/*`,
         `!${DIST_PATH}/fonts/**/*`,
+        `!${DIST_PATH}/icons/**/*`,
+        `!${DIST_PATH}/svg/**/*`,
     ], {read: false})
         .pipe(rm())
 })
@@ -53,6 +55,11 @@ task('copy:html', () => {
 task('copy:fonts', () => {
     return src(`${SRC_PATH}/fonts/**/*`)
         .pipe(dest(`${DIST_PATH}/fonts`))
+})
+
+task('copy:icons', () => {
+    return src(`${SRC_PATH}/icons/**/*`)
+        .pipe(dest(`${DIST_PATH}/icons`))
 })
 
 task('copy:css', () => {
@@ -148,8 +155,10 @@ task('static',
         parallel(
             'create:dist', 
             'img', 
-            'img:webp', 
-            'copy:fonts' 
+            'img:webp',
+            'img:svg', 
+            'copy:fonts', 
+            'copy:icons' 
         )
     )
 )
@@ -157,7 +166,7 @@ task('static',
 task('default', 
     series(
         'clean', 
-        parallel('copy:html', 'scss', 'js', 'copy:css', 'copy:js'), 
+        parallel('copy:html', 'scss', 'js', 'copy:js'), 
         parallel('watch', 'server')
     )
 )
@@ -173,7 +182,8 @@ task('build',
             'js', 
             'img', 
             'img:webp', 
-            'copy:fonts' 
+            'copy:fonts', 
+            'copy:icons' 
         )
     ) 
 )

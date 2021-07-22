@@ -1,0 +1,26 @@
+.custom-tabs {
+	padding-left: 0;
+	padding-right: 0;
+	border: 3px solid $gray-300;
+	border-radius: 2px;
+
+	.nav-link {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-transform: uppercase;
+		font-weight: 700;
+		background: $gray-300;
+		color: $gray-600;
+		border: none;
+		border-radius: 0;
+		appearance: none;
+
+		&.active {
+			background: $white;
+		}
+	}
+	
+	.tab-pane {
+		padding: 20px;
+	}
+}

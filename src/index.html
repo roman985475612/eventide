@@ -7,7 +7,108 @@
 	<title>Eventide</title>
 </head>
 <body>
+	<header class="main-header">
+		<div class="main-header__info">
+			<picture>
+				<source srcset="img/logo.webp" type="image/webp">
+				<img src="img/logo.png" alt="logo" class="main-header__logo">
+			</picture>
+			<h1 class="main-header__title">november 08-10 | sydney</h1>
+			<p class="main-header__text">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Perspiciatis qui ipsa earum aliquid praesentium, eaque, veritatis voluptates aliquam eum quam repudiandae, exercitationem voluptate expedita quidem.</p>
+			<div class="main-header__btns">
+				<a href="#" class="btn btn-primary custom-btn custom-btn--primary custom-btn--w-sm-100">
+					register
+	                <svg class="main-header__btn-icon">
+	                    <use xlink:href="svg/sprite.svg#chevron-circle-right-solid"></use>
+	                </svg>		
+				</a>
+				<a href="#" class="btn btn-secondary custom-btn custom-btn--secondary custom-btn--w-sm-100">
+					discover
+				</a>				
+			</div>
+		</div>
+	</header>
 	
+	<section class="goals">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>main goals of the event</h2>
+					<p class="goals__text goals__text--large">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. At assumenda itaque ex. Accusantium recusandae officiis sunt omnis error laudantium vitae. Accusantium, nam illum quas eligendi.</p>
+					<p class="goals__text">Distinctio temporibus inventore suscipit soluta, laborum, deleniti, consectetur sapiente deserunt tenetur cumque ullam numquam eos, reiciendis cum porro ex. Magnam fugiat odio vel, eos ullam.</p>
+				</div>
+				<div class="col-md-6 custom-tabs">
+					<ul class="nav nav-tabs nav-fill goals__tabs" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button 
+								class="nav-link active" 
+								id="learning-tab" 
+								data-bs-toggle="tab" 
+								data-bs-target="#learning" 
+								type="button" 
+								role="tab" 
+								aria-controls="learning" 
+								aria-selected="true"
+							>
+								learning objective
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button 
+								class="nav-link" 
+								id="audience-tab" 
+								data-bs-toggle="tab" 
+								data-bs-target="#audience" 
+								type="button" 
+								role="tab" 
+								aria-controls="audience" 
+								aria-selected="false"
+							>
+								target audience
+							</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div 
+							class="tab-pane fade show active" 
+							id="learning" 
+							role="tabpanel" 
+							aria-labelledby="learning-tab"
+						>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium aut et soluta quia, vitae cumque totam doloribus recusandae placeat.</p>
+							<div class="row">
+								<div class="col-md-6">
+									<ul class="goals__list">
+										<li class="goals__list-item">Lorem ipsum dolor sit.</li>
+										<li class="goals__list-item">Quos dolorem maxime temporibus.</li>
+										<li class="goals__list-item">Quidem vitae ab in.</li>
+										<li class="goals__list-item">Doloribus obcaecati, vel voluptate?</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<picture>
+										<source srcset="img/tab_img.webp" type="image/webp">
+										<img src="img/tab_img.png" alt="">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div 
+							class="tab-pane fade" 
+							id="audience" 
+							role="tabpanel" 
+							aria-labelledby="audience-tab"
+						>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium aut et soluta quia, vitae cumque totam doloribus recusandae placeat.</p>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium aut et soluta quia, vitae cumque totam doloribus recusandae placeat.</p>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium aut et soluta quia, vitae cumque totam doloribus recusandae placeat.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>

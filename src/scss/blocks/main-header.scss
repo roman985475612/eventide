@@ -1,0 +1,52 @@
+.main-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+	min-height: 500px;
+	background: url('../img/2.webp') center no-repeat;
+	background-size: cover;
+
+	&__info {
+		max-width: 50%;
+
+
+		@media screen and (max-width: 992px) {
+			max-width: 70%;
+		}
+
+		@media screen and (max-width: 768px) {
+			max-width: 80%;
+		}
+
+		@media screen and (max-width: 576px) {
+			max-width: 95%;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		color: $white;
+	}
+
+	&__text {
+		margin-bottom: 3rem;
+		font-size: 2rem;
+		color: $white;
+	}
+
+	&__btns {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	&__btn-icon {
+		margin-left: 5px;
+		width: 2rem;
+		height: 2rem;
+		fill: $white;
+	}
+}

@@ -1,0 +1,65 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	min-width: 320px;
+	background: $white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: $gray-500;
+}
+
+a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 700 !important;
+	color: $color-blue;
+
+	&:hover {
+		color: $color-blue;		
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	text-transform: uppercase;	
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 700;
+	color: $gray-600;
+}
+
+@media screen and (max-width: 992px) {
+	
+	html {
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	html {
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	
+	html {
+		font-size: 7px;
+	}
+}

@@ -6,3 +6,13 @@
 @import 'params';
 @import 'mixins';
 @import 'base';
+
+
+// Commns blocks
+@import 'blocks/custom-btn';
+@import 'blocks/custom-tabs';
+
+// Blocks
+@import 'blocks/main-header';
+@import 'blocks/goals';
+@import 'blocks/speakers';
