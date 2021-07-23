@@ -1,0 +1,25 @@
+.calendar {
+    
+    &__time {
+        padding: .5rem 1rem;
+        background: $color-blue;
+        border-radius: 4px;
+        font-weight: 500;
+        color: $white;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-left: 2rem;
+        margin-right: auto;
+        font-size: 1.8rem;
+        color: $gray-600;
+    }
+
+    &__icon {
+		width: 2rem;
+		height: 2rem;
+        fill: $color-blue;
+    }
+}

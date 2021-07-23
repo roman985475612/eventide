@@ -131,7 +131,7 @@ task('img:svg', () => {
                 }
             }
         }))
-        .pipe(dest(`${DIST_PATH}/svg`))
+        .pipe(dest(`${DIST_PATH}/icons`))
 })
 
 task('server', () => {

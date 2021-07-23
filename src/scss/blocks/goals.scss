@@ -4,9 +4,8 @@
 	&__text {
 
 		&--large {
+			@include text-large();
 			margin-bottom: 1.5rem;
-			font-size: 1.8rem;
-			color: $gray-600;
 		}
 	}
 

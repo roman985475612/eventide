@@ -1,0 +1,37 @@
+
+$radius: 4px;
+
+.accord {    
+    border-radius: $radius;    
+    width: 100%;
+
+    &__item {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        &--open {
+            .accord__body {
+                display: block;
+            }
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacer;
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: capitalize;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__body {
+        display: none;
+        padding: $spacer;
+    }
+}

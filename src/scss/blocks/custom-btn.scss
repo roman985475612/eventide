@@ -32,4 +32,32 @@
 			border-color: #474c52;				
 		}
 	}
+
+	&--link {
+		margin: 0;
+		padding: 0;
+		background: $white;
+		border: none;
+		color: $color-blue;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: $white;
+			border: none;
+			color: $color-blue;
+			box-shadow: none;
+		}
+	}
+
+	&__btn-icon {
+		margin: 0 5px;
+		width: 2rem;
+		height: 2rem;
+		fill: $white;
+
+		&--color-blue {
+			fill: $color-blue;
+		}
+	}
 }
