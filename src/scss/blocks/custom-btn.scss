@@ -2,9 +2,14 @@
 	padding: 10px 30px;
 	text-transform: uppercase;
 	font-size: 2rem;
+	color: $white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	&:hover {
+		color: $white;
+	}
 
 	&--w-sm-100 {
 		@media screen and (max-width: 576px) {
@@ -34,7 +39,8 @@
 	}
 
 	&--link {
-		margin: 0;
+		justify-content: flex-start;
+		margin: $spacer * 1.5 0 0 0;
 		padding: 0;
 		background: $white;
 		border: none;

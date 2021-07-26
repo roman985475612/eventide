@@ -1,0 +1,14 @@
+.promotional {
+    @include section();
+    
+    &__info {
+        padding-left: $spacer * 3;
+    }
+
+    &__text {
+
+        &--large {
+            @include text-large();
+        }
+    }
+}

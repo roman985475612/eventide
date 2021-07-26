@@ -1,0 +1,52 @@
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &__list {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        list-style: none;    
+    }
+    
+    &__item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: center center / contain no-repeat;
+        height: 100%;
+        opacity: 0;
+        transition: opacity .5s;          
+
+        &--show {
+            opacity: 1;
+        }
+    }
+}
+
+.indicators {
+    margin: $spacer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: $spacer;
+    list-style: none;
+
+    &__item {
+        border: 2px solid $color-blue;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        transition: background .3s;
+
+        &--current {
+            background: $color-blue;
+        }
+    }
+}

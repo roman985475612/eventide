@@ -211,7 +211,7 @@
 				<div class="col-lg-6 events__info">
 					<h2 class="events__title">event schedule</h2>
 					<p class="events__text events__text--large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, officia.</p>
-					<p class="eventes__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sint, adipisci eaque accusamus consequuntur ducimus, provident, minima minus voluptates laudantium iste harum aspernatur optio nam maxime hic delectus ex repellendus iure. Velit est, quidem maxime voluptatum fugit exercitationem consectetur quis earum quos voluptate saepe eaque, hic, tenetur quo quia adipisci?</p>
+					<p class="events__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sint, adipisci eaque accusamus consequuntur ducimus, provident, minima minus voluptates laudantium iste harum aspernatur optio nam maxime hic delectus ex repellendus iure. Velit est, quidem maxime voluptatum fugit exercitationem consectetur quis earum quos voluptate saepe eaque, hic, tenetur quo quia adipisci?</p>
 					<a href="#" class="btn btn-primary custom-btn custom-btn--link">
 						<svg class="custom-btn__btn-icon custom-btn__btn-icon--color-blue">
 							<use xlink:href="icons/sprite.svg#chevron-circle-down-solid"></use>
@@ -290,11 +290,148 @@
 	</section>
 	<!-- /.events -->
 
+	<section class="promotional">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="ratio ratio-16x9">
+						<iframe 
+							src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" 
+							title="YouTube video" 
+							allowfullscreen
+						></iframe>
+					</div>
+				</div>
+				<div class="col-md-6 promotional__info">
+					<h2>promotional video</h2>
+					<p class="promotional__text promotional__text--large">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi ratione quia, eum nulla reprehenderit labore iusto eius ut illo voluptatem dolorem dolorum eos libero nisi.</p>
+					<p class="promotional__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sint, adipisci eaque accusamus consequuntur ducimus, provident, minima minus voluptates laudantium iste harum aspernatur optio nam maxime hic delectus ex repellendus iure. Velit est, quidem maxime voluptatum fugit exercitationem consectetur quis earum quos voluptate saepe eaque, hic, tenetur quo quia adipisci?</p>
+					<a href="https://www.youtube.com" class="btn custom-btn custom-btn--link">
+						youtube channel
+						<svg class="custom-btn__btn-icon custom-btn__btn-icon--color-blue">
+							<use xlink:href="icons/sprite.svg#chevron-circle-right-solid"></use>
+						</svg>		
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.promotional -->
+
+	<section class="gallery">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 gallery__info">
+					<h2>event gallery</h2>
+					<p class="gallery__text gallery__text--large">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi ratione quia, eum nulla reprehenderit labore iusto eius ut illo voluptatem dolorem dolorum eos libero nisi.</p>
+					<p class="gallery__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sint, adipisci eaque accusamus consequuntur ducimus, provident, minima minus voluptates laudantium iste harum aspernatur optio nam maxime hic delectus ex repellendus iure. Velit est, quidem maxime voluptatum fugit exercitationem consectetur quis earum quos voluptate saepe eaque, hic, tenetur quo quia adipisci?</p>
+					<a href="https://www.youtube.com" class="btn custom-btn custom-btn--link">
+						flickr stream
+						<svg class="custom-btn__btn-icon custom-btn__btn-icon--color-blue">
+							<use xlink:href="icons/sprite.svg#chevron-circle-right-solid"></use>
+						</svg>		
+					</a>					
+				</div>
+				<div class="col-md-6">
+					<div class="slider">
+						<ul class="slider__list">
+							<li class="slider__item slider__item--show" style="background-image: url('./img/slider1.webp');"></li>
+							<li class="slider__item" style="background-image: url('./img/slider2.webp');"></li>
+							<li class="slider__item" style="background-image: url('./img/slider3.webp');"></li>
+							<li class="slider__item" style="background-image: url('./img/slider4.webp');"></li>
+							<li class="slider__item" style="background-image: url('./img/slider5.webp');"></li>
+						</ul>
+						<ul class="indicators">
+							<li data-slide="1" class="indicators__item indicators__item--current"></li>
+							<li data-slide="2" class="indicators__item"></li>
+							<li data-slide="3" class="indicators__item"></li>
+							<li data-slide="4" class="indicators__item"></li>
+							<li data-slide="5" class="indicators__item"></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.gallery -->
+
+	<section class="contact">
+		<div class="container">
+			<div class="row contact__info">
+				<div class="col-md-10 m-auto">
+					<h2>the most simple way to launch your event</h2>
+					<p class="contact__text contact__text--large">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Excepturi ratione quia, eum nulla reprehenderit labore iusto eius ut illo voluptatem dolorem dolorum eos libero nisi.</p>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 m-auto">
+					<form class="row g-3 contact__form form" novalidate>
+						<div class="col-md-3">
+							<input
+								id="formName" 
+								type="text" 
+								class="form-control form__control" 
+								placeholder="Jone Doe" 
+								aria-label="Jone Doe"
+								name="name"
+								data-valid="notEmpty"
+							>
+						</div>
+						<div class="col-md-3">
+							<input
+								id="formEmail" 
+								type="email" 
+								class="form-control form__control" 
+								placeholder="Email address" 
+								aria-label="Email address"
+								name="email"
+								data-valid="email"
+							>
+						</div>
+						<div class="col-md-2">
+							<label class="visually-hidden" for="autoSizingSelect">Preference</label>
+							<select 
+								id="formPlan"
+								class="form-select form__control form__control--select" 
+								name="plan"
+								data-valid="notEmpty"
+							>
+								<option selected disabled value="">Select Plan</option>
+								<option value="1">1 Day - $20</option>
+								<option value="2">2 Day - $25</option>
+								<option value="3">3 Day - $30</option>
+							</select>
+						</div>
+						<div class="col-md-2">
+							<button 
+								type="submit" 
+								class="btn custom-btn custom-btn--primary custom-btn--w-sm-100 form__submit"
+							>
+								register
+								<svg class="custom-btn__btn-icon">
+									<use xlink:href="icons/sprite.svg#chevron-circle-right-solid"></use>
+								</svg>		
+							</button>	
+						</div>
+					</form>				
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.form -->
+
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/main.min.js"></script>
 	<script>        
-        accord1 = new Accord('#accord1')
-		tabs1 = new SimpleTabs('.simple-tabs')
+        const accord1 = new Accord('#accord1')
+		const tabs1 = new SimpleTabs('.simple-tabs')
+		const slider1 = new Slider({
+			itemSelector: '.slider__item', 
+			activeClass: 'slider__item--show',
+			interval: 3000
+		})
+		const form1 = new Form('.contact__form')
     </script>
 </body>
 </html>

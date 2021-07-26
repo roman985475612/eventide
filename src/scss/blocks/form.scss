@@ -1,0 +1,52 @@
+.contact {
+    @include section();
+    background: $gray-300;
+    
+    &__info {
+        margin-bottom: $spacer * 3;
+        text-align: center;
+    }
+
+    &__text {
+
+        &--large {
+            @include text-large();
+        }
+    }
+
+    &__form {
+        align-items: center;
+        justify-content: space-around;
+        padding: $spacer * 3;
+        background: $white;
+        border-radius: 8px;
+    }
+}
+
+.form {
+
+    &__control {
+        padding: 10px 30px;
+        font-size: 2rem;
+        background-color: $gray-200;
+        color: $gray-600;
+
+        &--select {
+            width: 180px;
+        }
+
+        &.is-valid,
+        &.is-invalid {
+            background-size: 2rem !important;
+        }
+
+        &.is-valid {
+            border-color: $color-blue;
+            background-image: url('../icons/check-circle-regular.svg') !important;
+        }
+
+        &.is-invalid {
+            background-image: url('../icons/error_outline_black_24dp.svg') !important;
+        }
+    }
+}
