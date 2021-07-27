@@ -1,0 +1,63 @@
+.main-footer {
+
+    &__footer-menu {
+        padding-top: $spacer * 7;
+        padding-bottom: $spacer * 7;
+        border-bottom: none;
+        background: $gray-600;
+    }
+
+    &__title {
+        margin-bottom: $spacer * 3;
+        color: $gray-300;
+    }
+
+    &__text {
+        margin-bottom: $spacer * 3;
+    }
+
+    &__copyright {
+        padding: $spacer * 1.5 0;
+        background: $dark;
+        color: $gray-600;
+        font-size: 2rem;
+    }
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    justify-content: flex-start;
+    margin: $spacer * 1.5 0;
+    padding: 0;
+    list-style: none;
+
+    &__icon {
+        width: $spacer * 4;
+        height: $spacer * 4;
+        fill: $gray-300;
+
+        &:hover {
+            fill: $color-blue;
+        }
+    }
+}
+
+.footer-contacts {
+    padding: 0;
+    list-style: none;
+
+    &__item {
+        padding: $spacer * .25 0;
+    }
+
+    &__icon {
+        display: inline;
+        margin-right: $spacer * .5;
+        vertical-align: middle;
+        width: $spacer * 1.6;
+        height: $spacer * 1.6;
+        fill: $color-blue;
+    }
+}

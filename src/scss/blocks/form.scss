@@ -3,7 +3,7 @@
     background: $gray-300;
     
     &__info {
-        margin-bottom: $spacer * 3;
+        margin-bottom: $spacer * 6;
         text-align: center;
     }
 
@@ -26,13 +26,36 @@
 .form {
 
     &__control {
+        display: block;
         padding: 10px 30px;
         font-size: 2rem;
         background-color: $gray-200;
         color: $gray-600;
+        outline: none;
+        box-shadow: none;
+
+        &:focus {
+            background-color: $gray-200;
+            color: $gray-600;
+            outline: none;
+            box-shadow: none;    
+        }
 
         &--select {
-            width: 180px;
+
+            option {
+                background-color: $gray-200;
+                color: $black;
+            }
+        }
+
+        &--select:focus {
+            background-color: $color-blue;
+            color: $white;
+
+            option[value=""] {
+                display: none;
+            }
         }
 
         &.is-valid,

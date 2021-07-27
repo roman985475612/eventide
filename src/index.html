@@ -322,7 +322,7 @@
 	<section class="gallery">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 gallery__info">
+				<div class="col-lg-6 gallery__info">
 					<h2>event gallery</h2>
 					<p class="gallery__text gallery__text--large">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi ratione quia, eum nulla reprehenderit labore iusto eius ut illo voluptatem dolorem dolorum eos libero nisi.</p>
 					<p class="gallery__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sint, adipisci eaque accusamus consequuntur ducimus, provident, minima minus voluptates laudantium iste harum aspernatur optio nam maxime hic delectus ex repellendus iure. Velit est, quidem maxime voluptatum fugit exercitationem consectetur quis earum quos voluptate saepe eaque, hic, tenetur quo quia adipisci?</p>
@@ -333,7 +333,7 @@
 						</svg>		
 					</a>					
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6 d-none d-lg-block">
 					<div class="slider">
 						<ul class="slider__list">
 							<li class="slider__item slider__item--show" style="background-image: url('./img/slider1.webp');"></li>
@@ -367,7 +367,7 @@
 			<div class="row">
 				<div class="col-md-10 m-auto">
 					<form class="row g-3 contact__form form" novalidate>
-						<div class="col-md-3">
+						<div class="col-lg-3">
 							<input
 								id="formName" 
 								type="text" 
@@ -378,7 +378,7 @@
 								data-valid="notEmpty"
 							>
 						</div>
-						<div class="col-md-3">
+						<div class="col-lg-3">
 							<input
 								id="formEmail" 
 								type="email" 
@@ -389,8 +389,7 @@
 								data-valid="email"
 							>
 						</div>
-						<div class="col-md-2">
-							<label class="visually-hidden" for="autoSizingSelect">Preference</label>
+						<div class="col-lg-3">
 							<select 
 								id="formPlan"
 								class="form-select form__control form__control--select" 
@@ -403,7 +402,7 @@
 								<option value="3">3 Day - $30</option>
 							</select>
 						</div>
-						<div class="col-md-2">
+						<div class="col-lg-3">
 							<button 
 								type="submit" 
 								class="btn custom-btn custom-btn--primary custom-btn--w-sm-100 form__submit"
@@ -420,6 +419,121 @@
 		</div>
 	</section>
 	<!-- /.form -->
+
+	<div class="sponsors">
+		<div class="container">
+			<div class="row g-5 text-center">
+				<div class="col-xs-6 col-md-3">
+					<picture>
+						<source srcset="./img/sponsor_envato.webp" type="image/webp">
+						<img src="./img/sponsor_envato.png" alt="">
+					</picture>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<picture>
+						<source srcset="./img/sponsor_facebook.webp" type="image/webp">
+						<img src="./img/sponsor_facebook.png" alt="">
+					</picture>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<picture>
+						<source srcset="./img/sponsor_jquery.webp" type="image/webp">
+						<img src="./img/sponsor_jquery.png" alt="">
+					</picture>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<picture>
+						<source srcset="./img/sponsor_envato.webp" type="image/webp">
+						<img src="./img/sponsor_envato.png" alt="">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.sponsors -->
+
+	<div class="map">
+		<picture>
+			<source srcset="./img/map.webp" type="image/webp">
+			<img src="./img/map.png" alt="map" class="map__img">
+		</picture>	
+	</div>
+	<!-- /.map -->
+
+	<footer class="main-footer">
+		<div class="main-footer__footer-menu">
+			<div class="container">
+				<div class="row g-5">
+					<div class="col-md-12 col-lg-6">
+						<h3 class="main-footer__title">253 people have signed in since juli</h3>
+						<p class="main-footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nemo saepe dignissimos laborum eum velit odio facilis, delectus sapiente quas beatae asperiores a. Labore, consequatur.</p>
+						<ul class="main-footer__socials socials">
+							<li class="socials__item">
+								<a href="#" class="socials__link">
+									<svg class="socials__icon">
+										<use xlink:href="icons/sprite.svg#facebook"></use>
+									</svg>			
+								</a>	
+							</li>
+							<li class="socials__item">
+								<a href="#" class="socials__link">
+									<svg class="socials__icon">
+										<use xlink:href="icons/sprite.svg#twitter"></use>
+									</svg>			
+								</a>	
+							</li>
+							<li class="socials__item">
+								<a href="#" class="socials__link">
+									<svg class="socials__icon">
+										<use xlink:href="icons/sprite.svg#instagram"></use>
+									</svg>			
+								</a>	
+							</li>
+							<li class="socials__item">
+								<a href="#" class="socials__link">
+									<svg class="socials__icon">
+										<use xlink:href="icons/sprite.svg#youtube"></use>
+									</svg>			
+								</a>	
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<h3 class="main-footer__title">need help?</h3>
+						<p class="main-footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, magni <a href="mailto:info@example.com">info@example.com</a>. Sapiente maiores dolor deserunt est vel quos omnis, unde explicabo porro illo pariatur esse quaerat!</p>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<h3 class="main-footer__title">get in touch</h3>
+						<ul class="main-footer__contacts footer-contacts">
+							<li class="footer-contacts__item">
+								<svg class="footer-contacts__icon">
+									<use xlink:href="icons/sprite.svg#phone-square-alt-solid"></use>
+								</svg>			
+								<a href="tel:62365984684" class="footer-contacts__link">+62 365 984 684</a>
+							</li>
+							<li class="footer-contacts__item">
+								<svg class="footer-contacts__icon">
+									<use xlink:href="icons/sprite.svg#envelope-solid"></use>
+								</svg>			
+								<a href="mailto:help@example.com" class="footer-contacts__link">help@example.com</a>
+							</li>
+							<li class="footer-contacts__item">
+								<svg class="footer-contacts__icon">
+									<use xlink:href="icons/sprite.svg#skype-brands"></use>
+								</svg>			
+								<a href="skype:EventudeSupport" class="footer-contacts__link">EventudeSupport</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="main-footer__copyright">
+			<div class="container">
+				<p>Copyright &copy; 2021 Eventide</p>
+			</div>
+		</div>
+	</footer>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/main.min.js"></script>

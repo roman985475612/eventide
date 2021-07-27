@@ -176,7 +176,6 @@ task('build',
         'clean', 
         parallel(
             'copy:html', 
-            'copy:css', 
             'scss', 
             'copy:js',
             'js', 
